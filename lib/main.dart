@@ -39,7 +39,20 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('A random word:'),
-            Obx(() => Text(controller.current.value.asLowerCase)),
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  width: 3,
+                  color: Colors.black,
+                ),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Center(
+                child: Obx(() => Text(controller.current.value.asLowerCase)),
+              ),
+            ),
             ElevatedButton(
               onPressed: controller.newword,
               child: Text("Generate another word"),
