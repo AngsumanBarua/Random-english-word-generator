@@ -1,6 +1,6 @@
-# learning
+# Random English Word Generator
 
-A new Flutter project.
+A Flutter project that will generate random english word.
 
 ## Getting Started
 
